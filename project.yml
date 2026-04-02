@@ -1,0 +1,55 @@
+# xcodegen project spec — run `xcodegen generate` in this directory
+# Install: brew install xcodegen
+name: SlapMac
+
+options:
+  bundleIdPrefix: com.personal
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15"
+  generateEmptyDirectories: true
+  createIntermediateGroups: true
+
+# ── Menu bar app ─────────────────────────────────────────────────────────────
+targets:
+  SlapMacApp:
+    type: application
+    platform: macOS
+    sources:
+      - path: SlapMacApp
+        excludes: ["Info.plist"]
+      - path: Shared
+    resources:
+      - path: Sounds
+        optional: true
+    info:
+      path: SlapMacApp/Info.plist
+    settings:
+      base:
+        PRODUCT_NAME: SlapMac
+        PRODUCT_BUNDLE_IDENTIFIER: com.personal.slapmac
+        SWIFT_VERSION: "5.10"
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        CODE_SIGN_STYLE: Automatic
+        # Disable sandbox for personal use (needed to connect to Unix socket in /var/run)
+        ENABLE_APP_SANDBOX: NO
+        # Allow running without signing
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGN_IDENTITY: ""
+
+  # ── Privileged daemon ───────────────────────────────────────────────────────
+  SlapMacDaemon:
+    type: tool
+    platform: macOS
+    sources:
+      - path: SlapMacDaemon
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_NAME: SlapMacDaemon
+        PRODUCT_BUNDLE_IDENTIFIER: com.personal.slapmac.daemon
+        SWIFT_VERSION: "5.10"
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGN_IDENTITY: ""

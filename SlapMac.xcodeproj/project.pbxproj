@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17E94D1E64A71E34639B91EF /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB1A95786679DF1D9F6CCA /* MenuBarController.swift */; };
+		1EC04850563BDD9CA8DBF4B5 /* DaemonConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F925F9E00EEF30517977EE4D /* DaemonConnection.swift */; };
+		288743B43FAC27B5BC211336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDACEC56EB847A5465CE52 /* AppDelegate.swift */; };
+		36F3E238F83FD439F611A78D /* ImpactEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46E5177FCD32233077C44B3 /* ImpactEvent.swift */; };
+		3A2097741B55CFF003143A8F /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB63E032427E64C338E8F45 /* AudioManager.swift */; };
+		435C84927F3A55A4377E73AA /* ImpactDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CED5511219612CBB1C210 /* ImpactDetector.swift */; };
+		4B79E40CCCC2D836E45CA69B /* AccelerometerReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC86AB6A9B0B746C4920A208 /* AccelerometerReader.swift */; };
+		50F0B54618CF8E74B05E32C1 /* ImpactEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46E5177FCD32233077C44B3 /* ImpactEvent.swift */; };
+		602CCAA694A46B03B7AF1E90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715B356D6B3B5E1CF5EBDE30 /* main.swift */; };
+		BD5C7618FF9EC75A206404A5 /* SocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6233756A2A09DE3D2204FCEA /* SocketServer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		114CED5511219612CBB1C210 /* ImpactDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactDetector.swift; sourceTree = "<group>"; };
+		6233756A2A09DE3D2204FCEA /* SocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServer.swift; sourceTree = "<group>"; };
+		70722B109A90A422D31933B4 /* SlapMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlapMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		715B356D6B3B5E1CF5EBDE30 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		75CB1A95786679DF1D9F6CCA /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		7DB63E032427E64C338E8F45 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		9DADDE45B9D66B3FD221D34C /* SlapMacDaemon */ = {isa = PBXFileReference; includeInIndex = 0; path = SlapMacDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1EDACEC56EB847A5465CE52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A46E5177FCD32233077C44B3 /* ImpactEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactEvent.swift; sourceTree = "<group>"; };
+		F925F9E00EEF30517977EE4D /* DaemonConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonConnection.swift; sourceTree = "<group>"; };
+		FC86AB6A9B0B746C4920A208 /* AccelerometerReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerReader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		10118B9E731C8CFEE0D902AF = {
+			isa = PBXGroup;
+			children = (
+				E54BD2CBDF858A84608DDE4E /* Shared */,
+				B7DD9C3A4E3043B3D2097511 /* SlapMacApp */,
+				2458722C4895F7EB6957826A /* SlapMacDaemon */,
+				A2912CC6162E9D084FA1A162 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2458722C4895F7EB6957826A /* SlapMacDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				FC86AB6A9B0B746C4920A208 /* AccelerometerReader.swift */,
+				114CED5511219612CBB1C210 /* ImpactDetector.swift */,
+				715B356D6B3B5E1CF5EBDE30 /* main.swift */,
+				6233756A2A09DE3D2204FCEA /* SocketServer.swift */,
+			);
+			path = SlapMacDaemon;
+			sourceTree = "<group>";
+		};
+		A2912CC6162E9D084FA1A162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70722B109A90A422D31933B4 /* SlapMacApp.app */,
+				9DADDE45B9D66B3FD221D34C /* SlapMacDaemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7DD9C3A4E3043B3D2097511 /* SlapMacApp */ = {
+			isa = PBXGroup;
+			children = (
+				A1EDACEC56EB847A5465CE52 /* AppDelegate.swift */,
+				7DB63E032427E64C338E8F45 /* AudioManager.swift */,
+				F925F9E00EEF30517977EE4D /* DaemonConnection.swift */,
+				75CB1A95786679DF1D9F6CCA /* MenuBarController.swift */,
+			);
+			path = SlapMacApp;
+			sourceTree = "<group>";
+		};
+		E54BD2CBDF858A84608DDE4E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A46E5177FCD32233077C44B3 /* ImpactEvent.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49B9D1A7E5D73876F46F951E /* SlapMacApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ABD9AEF59C3D4EB36CE9EB9 /* Build configuration list for PBXNativeTarget "SlapMacApp" */;
+			buildPhases = (
+				DD6E2254A912787823075E88 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlapMacApp;
+			packageProductDependencies = (
+			);
+			productName = SlapMacApp;
+			productReference = 70722B109A90A422D31933B4 /* SlapMacApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90C3BA0673EBA1EB103366D8 /* SlapMacDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F92B3A9C3ED94D4BE7D1D8 /* Build configuration list for PBXNativeTarget "SlapMacDaemon" */;
+			buildPhases = (
+				00AE870B1C630477E7595CD3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlapMacDaemon;
+			packageProductDependencies = (
+			);
+			productName = SlapMacDaemon;
+			productReference = 9DADDE45B9D66B3FD221D34C /* SlapMacDaemon */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92FA245724842433324BC641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					49B9D1A7E5D73876F46F951E = {
+						ProvisioningStyle = Automatic;
+					};
+					90C3BA0673EBA1EB103366D8 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4DDF509F5C5587006C322937 /* Build configuration list for PBXProject "SlapMac" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 10118B9E731C8CFEE0D902AF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A2912CC6162E9D084FA1A162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49B9D1A7E5D73876F46F951E /* SlapMacApp */,
+				90C3BA0673EBA1EB103366D8 /* SlapMacDaemon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00AE870B1C630477E7595CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B79E40CCCC2D836E45CA69B /* AccelerometerReader.swift in Sources */,
+				435C84927F3A55A4377E73AA /* ImpactDetector.swift in Sources */,
+				50F0B54618CF8E74B05E32C1 /* ImpactEvent.swift in Sources */,
+				BD5C7618FF9EC75A206404A5 /* SocketServer.swift in Sources */,
+				602CCAA694A46B03B7AF1E90 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6E2254A912787823075E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288743B43FAC27B5BC211336 /* AppDelegate.swift in Sources */,
+				3A2097741B55CFF003143A8F /* AudioManager.swift in Sources */,
+				1EC04850563BDD9CA8DBF4B5 /* DaemonConnection.swift in Sources */,
+				36F3E238F83FD439F611A78D /* ImpactEvent.swift in Sources */,
+				17E94D1E64A71E34639B91EF /* MenuBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		14B0DEF5090B52326E6D412B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7010B0C7F91B8B15231C4DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.slapmac.daemon;
+				PRODUCT_NAME = SlapMacDaemon;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		735F2FF86E589AFEEE9F499E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = SlapMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.slapmac;
+				PRODUCT_NAME = SlapMac;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		8A4CD374CE7DEBBDB386F245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B01F850EC38DB4AFCC0F8BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.slapmac.daemon;
+				PRODUCT_NAME = SlapMacDaemon;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		D2863486ED58F1F9965E1C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = SlapMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.slapmac;
+				PRODUCT_NAME = SlapMac;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ABD9AEF59C3D4EB36CE9EB9 /* Build configuration list for PBXNativeTarget "SlapMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2863486ED58F1F9965E1C82 /* Debug */,
+				735F2FF86E589AFEEE9F499E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4DDF509F5C5587006C322937 /* Build configuration list for PBXProject "SlapMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B0DEF5090B52326E6D412B /* Debug */,
+				8A4CD374CE7DEBBDB386F245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B1F92B3A9C3ED94D4BE7D1D8 /* Build configuration list for PBXNativeTarget "SlapMacDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01F850EC38DB4AFCC0F8BD0 /* Debug */,
+				7010B0C7F91B8B15231C4DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92FA245724842433324BC641 /* Project object */;
+}
