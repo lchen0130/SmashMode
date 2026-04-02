@@ -1,8 +1,8 @@
 # SlapMac
 
-Slap your MacBook. It screams back.
+Smash Time
 
-SlapMac reads the raw accelerometer inside Apple Silicon MacBooks at ~800 Hz, runs a four-algorithm voting system to distinguish genuine impacts from typing and ambient vibration, and plays a sound effect scaled to how hard you hit it.
+SmashMode reads the raw accelerometer inside Apple Silicon MacBooks at ~800 Hz, runs a four-algorithm voting system to distinguish genuine impacts from typing and ambient vibration, and plays a sound effect scaled to how hard you hit it.
 
 ---
 
